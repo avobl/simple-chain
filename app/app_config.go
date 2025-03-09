@@ -71,7 +71,10 @@ import (
 	ibcexported "github.com/cosmos/ibc-go/v8/modules/core/exported"
 	"google.golang.org/protobuf/types/known/durationpb"
 
+	kudosmodulev1 "simple-chain/api/simplechain/kudos/module"
 	simplechainmodulev1 "simple-chain/api/simplechain/simplechain/module"
+	_ "simple-chain/x/kudos/module" // import for side-effects
+	kudosmoduletypes "simple-chain/x/kudos/types"
 	_ "simple-chain/x/simplechain/module" // import for side-effects
 	simplechainmoduletypes "simple-chain/x/simplechain/types"
 	// this line is used by starport scaffolding # stargate/app/moduleImport
@@ -112,6 +115,7 @@ var (
 		circuittypes.ModuleName,
 		// chain modules
 		simplechainmoduletypes.ModuleName,
+		kudosmoduletypes.ModuleName,
 		// this line is used by starport scaffolding # stargate/app/initGenesis
 	}
 
@@ -137,6 +141,7 @@ var (
 		ibcfeetypes.ModuleName,
 		// chain modules
 		simplechainmoduletypes.ModuleName,
+		kudosmoduletypes.ModuleName,
 		// this line is used by starport scaffolding # stargate/app/beginBlockers
 	}
 
@@ -156,6 +161,7 @@ var (
 		ibcfeetypes.ModuleName,
 		// chain modules
 		simplechainmoduletypes.ModuleName,
+		kudosmoduletypes.ModuleName,
 		// this line is used by starport scaffolding # stargate/app/endBlockers
 	}
 
@@ -308,6 +314,10 @@ var (
 			{
 				Name:   simplechainmoduletypes.ModuleName,
 				Config: appconfig.WrapAny(&simplechainmodulev1.Module{}),
+			},
+			{
+				Name:   kudosmoduletypes.ModuleName,
+				Config: appconfig.WrapAny(&kudosmodulev1.Module{}),
 			},
 			// this line is used by starport scaffolding # stargate/app/moduleConfig
 		},

@@ -1,0 +1,15 @@
+syntax = "proto3";
+package simplechain.kudos;
+
+import "amino/amino.proto";
+import "gogoproto/gogo.proto";
+
+option go_package = "simple-chain/x/kudos/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (amino.name) = "simplechain/x/kudos/Params";
+  option (gogoproto.equal) = true;
+
+  
+}

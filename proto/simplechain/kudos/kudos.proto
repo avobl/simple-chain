@@ -1,0 +1,11 @@
+syntax = "proto3";
+package simplechain.kudos;
+
+option go_package = "simple-chain/x/kudos/types";
+
+message Kudos {
+  
+  string sender = 1; 
+  string receiver = 2; 
+  string message = 3; 
+}

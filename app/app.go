@@ -53,6 +53,7 @@ import (
 	ibctransferkeeper "github.com/cosmos/ibc-go/v8/modules/apps/transfer/keeper"
 	ibckeeper "github.com/cosmos/ibc-go/v8/modules/core/keeper"
 
+	kudosmodulekeeper "simple-chain/x/kudos/keeper"
 	simplechainmodulekeeper "simple-chain/x/simplechain/keeper"
 	// this line is used by starport scaffolding # stargate/app/moduleImport
 
@@ -117,6 +118,7 @@ type App struct {
 	ScopedICAHostKeeper       capabilitykeeper.ScopedKeeper
 
 	SimplechainKeeper simplechainmodulekeeper.Keeper
+	KudosKeeper       kudosmodulekeeper.Keeper
 	// this line is used by starport scaffolding # stargate/app/keeperDeclaration
 
 	// simulation manager
@@ -255,6 +257,7 @@ func New(
 		&app.ConsensusParamsKeeper,
 		&app.CircuitBreakerKeeper,
 		&app.SimplechainKeeper,
+		&app.KudosKeeper,
 		// this line is used by starport scaffolding # stargate/app/keeperDefinition
 	); err != nil {
 		panic(err)

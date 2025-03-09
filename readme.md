@@ -49,3 +49,9 @@ curl https://get.ignite.com/username/simple-chain@latest! | sudo bash
 - [Ignite CLI docs](https://docs.ignite.com)
 - [Cosmos SDK docs](https://docs.cosmos.network)
 - [Developer Chat](https://discord.gg/ignite)
+
+### 🚀 Access the APIs:
+
+REST API: http://localhost:1317  
+GRPC: http://localhost:9090  
+Blockchain Explorer: http://localhost:4500

@@ -9,6 +9,12 @@ const (
 
 	// MemStoreKey defines the in-memory store key
 	MemStoreKey = "mem_kudos"
+
+	// KudosKey defines the key to store the value
+	KudosKey = "Kudos/value/"
+
+	// KudosCountKey defines the key to store the count
+	KudosCountKey = "Kudos/count/"
 )
 
 var (

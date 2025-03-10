@@ -31,7 +31,7 @@ import (
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/require"
 
-	"simple-chain/app"
+	"github.com/avobl/simple-chain/app"
 )
 
 const (

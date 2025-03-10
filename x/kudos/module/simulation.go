@@ -8,9 +8,9 @@ import (
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 	"github.com/cosmos/cosmos-sdk/x/simulation"
 
-	"simple-chain/testutil/sample"
-	kudossimulation "simple-chain/x/kudos/simulation"
-	"simple-chain/x/kudos/types"
+	"github.com/avobl/simple-chain/testutil/sample"
+	kudossimulation "github.com/avobl/simple-chain/x/kudos/simulation"
+	"github.com/avobl/simple-chain/x/kudos/types"
 )
 
 // avoid unused import issue

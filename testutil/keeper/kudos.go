@@ -17,8 +17,8 @@ import (
 	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
 	"github.com/stretchr/testify/require"
 
-	"simple-chain/x/kudos/keeper"
-	"simple-chain/x/kudos/types"
+	"github.com/avobl/simple-chain/x/kudos/keeper"
+	"github.com/avobl/simple-chain/x/kudos/types"
 )
 
 func KudosKeeper(t testing.TB) (keeper.Keeper, sdk.Context) {

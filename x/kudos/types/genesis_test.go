@@ -3,8 +3,8 @@ package types_test
 import (
 	"testing"
 
+	"github.com/avobl/simple-chain/x/kudos/types"
 	"github.com/stretchr/testify/require"
-	"simple-chain/x/kudos/types"
 )
 
 func TestGenesisState_Validate(t *testing.T) {

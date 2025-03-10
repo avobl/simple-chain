@@ -18910,7 +18910,7 @@ paths:
               parameters.
       tags:
         - Msg
-  /simple-chain/kudos/params:
+  /github.com/avobl/simple-chain/kudos/params:
     get:
       summary: Parameters queries the parameters of the module.
       operationId: SimplechainKudosQuery_Params

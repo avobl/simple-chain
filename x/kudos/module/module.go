@@ -20,9 +20,9 @@ import (
 
 	// this line is used by starport scaffolding # 1
 
-	modulev1 "simple-chain/api/simplechain/kudos/module"
-	"simple-chain/x/kudos/keeper"
-	"simple-chain/x/kudos/types"
+	modulev1 "github.com/avobl/simple-chain/api/simplechain/kudos/module"
+	"github.com/avobl/simple-chain/x/kudos/keeper"
+	"github.com/avobl/simple-chain/x/kudos/types"
 )
 
 var (

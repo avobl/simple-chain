@@ -5,7 +5,7 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/runtime"
 
-	"simple-chain/x/kudos/types"
+	"github.com/avobl/simple-chain/x/kudos/types"
 )
 
 // GetParams get all parameters as types.Params

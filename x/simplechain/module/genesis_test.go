@@ -3,11 +3,11 @@ package simplechain_test
 import (
 	"testing"
 
+	keepertest "github.com/avobl/simple-chain/testutil/keeper"
+	"github.com/avobl/simple-chain/testutil/nullify"
+	"github.com/avobl/simple-chain/x/simplechain/module"
+	"github.com/avobl/simple-chain/x/simplechain/types"
 	"github.com/stretchr/testify/require"
-	keepertest "simple-chain/testutil/keeper"
-	"simple-chain/testutil/nullify"
-	"simple-chain/x/simplechain/module"
-	"simple-chain/x/simplechain/types"
 )
 
 func TestGenesis(t *testing.T) {

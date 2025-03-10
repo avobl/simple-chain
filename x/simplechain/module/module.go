@@ -20,9 +20,9 @@ import (
 
 	// this line is used by starport scaffolding # 1
 
-	modulev1 "simple-chain/api/simplechain/simplechain/module"
-	"simple-chain/x/simplechain/keeper"
-	"simple-chain/x/simplechain/types"
+	modulev1 "github.com/avobl/simple-chain/api/simplechain/simplechain/module"
+	"github.com/avobl/simple-chain/x/simplechain/keeper"
+	"github.com/avobl/simple-chain/x/simplechain/types"
 )
 
 var (

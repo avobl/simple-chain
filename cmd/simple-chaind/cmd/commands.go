@@ -25,7 +25,7 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	"simple-chain/app"
+	"github.com/avobl/simple-chain/app"
 )
 
 func initRootCmd(

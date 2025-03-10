@@ -8,7 +8,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"simple-chain/x/simplechain/types"
+	"github.com/avobl/simple-chain/x/simplechain/types"
 )
 
 type (

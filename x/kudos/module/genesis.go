@@ -3,8 +3,8 @@ package kudos
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"simple-chain/x/kudos/keeper"
-	"simple-chain/x/kudos/types"
+	"github.com/avobl/simple-chain/x/kudos/keeper"
+	"github.com/avobl/simple-chain/x/kudos/types"
 )
 
 // InitGenesis initializes the module's state from a provided genesis state.

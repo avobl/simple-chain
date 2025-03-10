@@ -6,7 +6,7 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
 
-	"simple-chain/x/simplechain/types"
+	"github.com/avobl/simple-chain/x/simplechain/types"
 )
 
 func TestMsgUpdateParams(t *testing.T) {

@@ -3,7 +3,7 @@ package simplechain
 import (
 	autocliv1 "cosmossdk.io/api/cosmos/autocli/v1"
 
-	modulev1 "simple-chain/api/simplechain/simplechain"
+	modulev1 "github.com/avobl/simple-chain/api/simplechain/simplechain"
 )
 
 // AutoCLIOptions implements the autocli.HasAutoCLIConfig interface.

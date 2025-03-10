@@ -3,7 +3,7 @@ package kudos
 import (
 	autocliv1 "cosmossdk.io/api/cosmos/autocli/v1"
 
-	modulev1 "simple-chain/api/simplechain/kudos"
+	modulev1 "github.com/avobl/simple-chain/api/simplechain/kudos"
 )
 
 // AutoCLIOptions implements the autocli.HasAutoCLIConfig interface.

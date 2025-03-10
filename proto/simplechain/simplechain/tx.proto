@@ -7,7 +7,7 @@ import "cosmos_proto/cosmos.proto";
 import "gogoproto/gogo.proto";
 import "simplechain/simplechain/params.proto";
 
-option go_package = "simple-chain/x/simplechain/types";
+option go_package = "github.com/avobl/simple-chain/x/simplechain/types";
 
 // Msg defines the Msg service.
 service Msg {

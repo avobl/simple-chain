@@ -3,8 +3,8 @@ package simplechain
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"simple-chain/x/simplechain/keeper"
-	"simple-chain/x/simplechain/types"
+	"github.com/avobl/simple-chain/x/simplechain/keeper"
+	"github.com/avobl/simple-chain/x/simplechain/types"
 )
 
 // InitGenesis initializes the module's state from a provided genesis state.

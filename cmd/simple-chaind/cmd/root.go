@@ -24,7 +24,7 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 
-	"simple-chain/app"
+	"github.com/avobl/simple-chain/app"
 )
 
 // NewRootCmd creates a new root command for simple-chaind. It is called once in the main function.

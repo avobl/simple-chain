@@ -6,9 +6,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	keepertest "simple-chain/testutil/keeper"
-	"simple-chain/x/simplechain/keeper"
-	"simple-chain/x/simplechain/types"
+	keepertest "github.com/avobl/simple-chain/testutil/keeper"
+	"github.com/avobl/simple-chain/x/simplechain/keeper"
+	"github.com/avobl/simple-chain/x/simplechain/types"
 )
 
 func setupMsgServer(t testing.TB) (keeper.Keeper, types.MsgServer, context.Context) {

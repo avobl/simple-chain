@@ -4,7 +4,7 @@ package simplechain.simplechain;
 import "amino/amino.proto";
 import "gogoproto/gogo.proto";
 
-option go_package = "simple-chain/x/simplechain/types";
+option go_package = "github.com/avobl/simple-chain/x/simplechain/types";
 
 // Params defines the parameters for the module.
 message Params {

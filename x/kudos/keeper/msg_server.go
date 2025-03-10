@@ -1,7 +1,7 @@
 package keeper
 
 import (
-	"simple-chain/x/kudos/types"
+	"github.com/avobl/simple-chain/x/kudos/types"
 )
 
 type msgServer struct {

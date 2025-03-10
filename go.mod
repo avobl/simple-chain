@@ -1,4 +1,4 @@
-module simple-chain
+module github.com/avobl/simple-chain
 
 go 1.21
 

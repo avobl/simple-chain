@@ -53,11 +53,11 @@ import (
 	ibctransferkeeper "github.com/cosmos/ibc-go/v8/modules/apps/transfer/keeper"
 	ibckeeper "github.com/cosmos/ibc-go/v8/modules/core/keeper"
 
-	kudosmodulekeeper "simple-chain/x/kudos/keeper"
-	simplechainmodulekeeper "simple-chain/x/simplechain/keeper"
+	kudosmodulekeeper "github.com/avobl/simple-chain/x/kudos/keeper"
+	simplechainmodulekeeper "github.com/avobl/simple-chain/x/simplechain/keeper"
 	// this line is used by starport scaffolding # stargate/app/moduleImport
 
-	"simple-chain/docs"
+	"github.com/avobl/simple-chain/docs"
 )
 
 const (

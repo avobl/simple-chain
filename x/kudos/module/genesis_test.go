@@ -3,11 +3,11 @@ package kudos_test
 import (
 	"testing"
 
+	keepertest "github.com/avobl/simple-chain/testutil/keeper"
+	"github.com/avobl/simple-chain/testutil/nullify"
+	"github.com/avobl/simple-chain/x/kudos/module"
+	"github.com/avobl/simple-chain/x/kudos/types"
 	"github.com/stretchr/testify/require"
-	keepertest "simple-chain/testutil/keeper"
-	"simple-chain/testutil/nullify"
-	"simple-chain/x/kudos/module"
-	"simple-chain/x/kudos/types"
 )
 
 func TestGenesis(t *testing.T) {

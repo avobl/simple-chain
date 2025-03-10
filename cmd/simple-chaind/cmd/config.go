@@ -5,7 +5,7 @@ import (
 	serverconfig "github.com/cosmos/cosmos-sdk/server/config"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"simple-chain/app"
+	"github.com/avobl/simple-chain/app"
 )
 
 func initSDKConfig() {

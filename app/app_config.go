@@ -71,12 +71,12 @@ import (
 	ibcexported "github.com/cosmos/ibc-go/v8/modules/core/exported"
 	"google.golang.org/protobuf/types/known/durationpb"
 
-	kudosmodulev1 "simple-chain/api/simplechain/kudos/module"
-	simplechainmodulev1 "simple-chain/api/simplechain/simplechain/module"
-	_ "simple-chain/x/kudos/module" // import for side-effects
-	kudosmoduletypes "simple-chain/x/kudos/types"
-	_ "simple-chain/x/simplechain/module" // import for side-effects
-	simplechainmoduletypes "simple-chain/x/simplechain/types"
+	kudosmodulev1 "github.com/avobl/simple-chain/api/simplechain/kudos/module"
+	simplechainmodulev1 "github.com/avobl/simple-chain/api/simplechain/simplechain/module"
+	_ "github.com/avobl/simple-chain/x/kudos/module" // import for side-effects
+	kudosmoduletypes "github.com/avobl/simple-chain/x/kudos/types"
+	_ "github.com/avobl/simple-chain/x/simplechain/module" // import for side-effects
+	simplechainmoduletypes "github.com/avobl/simple-chain/x/simplechain/types"
 	// this line is used by starport scaffolding # stargate/app/moduleImport
 )
 

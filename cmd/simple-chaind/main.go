@@ -6,8 +6,8 @@ import (
 
 	svrcmd "github.com/cosmos/cosmos-sdk/server/cmd"
 
-	"simple-chain/app"
-	"simple-chain/cmd/simple-chaind/cmd"
+	"github.com/avobl/simple-chain/app"
+	"github.com/avobl/simple-chain/cmd/simple-chaind/cmd"
 )
 
 func main() {

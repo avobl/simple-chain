@@ -1,7 +1,7 @@
 package keeper
 
 import (
-	"simple-chain/x/simplechain/types"
+	"github.com/avobl/simple-chain/x/simplechain/types"
 )
 
 var _ types.QueryServer = Keeper{}

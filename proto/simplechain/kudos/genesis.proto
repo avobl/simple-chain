@@ -5,7 +5,7 @@ import "amino/amino.proto";
 import "gogoproto/gogo.proto";
 import "simplechain/kudos/params.proto";
 
-option go_package = "simple-chain/x/kudos/types";
+option go_package = "github.com/avobl/simple-chain/x/kudos/types";
 
 // GenesisState defines the kudos module's genesis state.
 message GenesisState {

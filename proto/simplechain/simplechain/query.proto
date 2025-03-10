@@ -7,13 +7,13 @@ import "google/api/annotations.proto";
 import "cosmos/base/query/v1beta1/pagination.proto";
 import "simplechain/simplechain/params.proto";
 
-option go_package = "simple-chain/x/simplechain/types";
+option go_package = "github.com/avobl/simple-chain/x/simplechain/types";
 
 // Query defines the gRPC querier service.
 service Query {
   // Parameters queries the parameters of the module.
   rpc Params(QueryParamsRequest) returns (QueryParamsResponse) {
-    option (google.api.http).get = "/simple-chain/simplechain/params";
+    option (google.api.http).get = "/github.com/avobl/simple-chain/simplechain/params";
   }
 }
 

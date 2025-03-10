@@ -5,8 +5,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	keepertest "simple-chain/testutil/keeper"
-	"simple-chain/x/simplechain/types"
+	keepertest "github.com/avobl/simple-chain/testutil/keeper"
+	"github.com/avobl/simple-chain/x/simplechain/types"
 )
 
 func TestGetParams(t *testing.T) {

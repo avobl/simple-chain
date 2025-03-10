@@ -17,8 +17,8 @@ import (
 	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
 	"github.com/stretchr/testify/require"
 
-	"simple-chain/x/simplechain/keeper"
-	"simple-chain/x/simplechain/types"
+	"github.com/avobl/simple-chain/x/simplechain/keeper"
+	"github.com/avobl/simple-chain/x/simplechain/types"
 )
 
 func SimplechainKeeper(t testing.TB) (keeper.Keeper, sdk.Context) {

@@ -18910,22 +18910,17 @@ paths:
               parameters.
       tags:
         - Msg
-  /github.com/avobl/simple-chain/kudos/params:
-    get:
-      summary: Parameters queries the parameters of the module.
-      operationId: SimplechainKudosQuery_Params
+  /simplechain.kudos.Msg/SendKudos:
+    post:
+      operationId: SimplechainKudosMsg_SendKudos
       responses:
         '200':
           description: A successful response.
           schema:
             type: object
             properties:
-              params:
-                description: params holds all the parameters of this module.
-                type: object
-            description: >-
-              QueryParamsResponse is response type for the Query/Params RPC
-              method.
+              message:
+                type: string
         default:
           description: An unexpected error response.
           schema:
@@ -18944,8 +18939,23 @@ paths:
                     '@type':
                       type: string
                   additionalProperties: {}
+      parameters:
+        - name: body
+          in: body
+          required: true
+          schema:
+            type: object
+            properties:
+              creator:
+                type: string
+              sender:
+                type: string
+              receiver:
+                type: string
+              message:
+                type: string
       tags:
-        - Query
+        - Msg
   /simplechain.kudos.Msg/UpdateParams:
     post:
       summary: |-
@@ -18994,10 +19004,7 @@ paths:
                   authority is the address that controls the module (defaults to
                   x/gov unless overwritten).
               params:
-                description: |-
-                  params defines the module parameters to update.
-
-                  NOTE: All parameters must be supplied.
+                description: 'NOTE: All parameters must be supplied.'
                 type: object
             description: MsgUpdateParams is the Msg/UpdateParams request type.
       tags:
@@ -19058,6 +19065,42 @@ paths:
             description: MsgUpdateParams is the Msg/UpdateParams request type.
       tags:
         - Msg
+  /github.com/avobl/simple-chain/simplechain/params:
+    get:
+      summary: Parameters queries the parameters of the module.
+      operationId: SimplechainSimplechainQuery_Params
+      responses:
+        '200':
+          description: A successful response.
+          schema:
+            type: object
+            properties:
+              params:
+                description: params holds all the parameters of this module.
+                type: object
+            description: >-
+              QueryParamsResponse is response type for the Query/Params RPC
+              method.
+        default:
+          description: An unexpected error response.
+          schema:
+            type: object
+            properties:
+              code:
+                type: integer
+                format: int32
+              message:
+                type: string
+              details:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    '@type':
+                      type: string
+                  additionalProperties: {}
+      tags:
+        - Query
 definitions:
   cosmos.auth.v1beta1.MsgUpdateParams:
     type: object
@@ -26693,16 +26736,22 @@ definitions:
     description: |-
       Version defines the versioning scheme used to negotiate the IBC verison in
       the connection handshake.
-  simplechain.kudos.Params:
-    type: object
-    description: Params defines the parameters for the module.
-  simplechain.kudos.QueryParamsResponse:
+  simplechain.kudos.MsgSendKudos:
     type: object
     properties:
-      params:
-        description: params holds all the parameters of this module.
-        type: object
-    description: QueryParamsResponse is response type for the Query/Params RPC method.
+      creator:
+        type: string
+      sender:
+        type: string
+      receiver:
+        type: string
+      message:
+        type: string
+  simplechain.kudos.MsgSendKudosResponse:
+    type: object
+    properties:
+      message:
+        type: string
   simplechain.kudos.MsgUpdateParams:
     type: object
     properties:
@@ -26712,10 +26761,7 @@ definitions:
           authority is the address that controls the module (defaults to x/gov
           unless overwritten).
       params:
-        description: |-
-          params defines the module parameters to update.
-
-          NOTE: All parameters must be supplied.
+        description: 'NOTE: All parameters must be supplied.'
         type: object
     description: MsgUpdateParams is the Msg/UpdateParams request type.
   simplechain.kudos.MsgUpdateParamsResponse:
@@ -26723,6 +26769,9 @@ definitions:
     description: |-
       MsgUpdateParamsResponse defines the response structure for executing a
       MsgUpdateParams message.
+  simplechain.kudos.Params:
+    type: object
+    description: Params defines the parameters for the module.
   simplechain.simplechain.MsgUpdateParams:
     type: object
     properties:
@@ -26746,3 +26795,10 @@ definitions:
   simplechain.simplechain.Params:
     type: object
     description: Params defines the parameters for the module.
+  simplechain.simplechain.QueryParamsResponse:
+    type: object
+    properties:
+      params:
+        description: params holds all the parameters of this module.
+        type: object
+    description: QueryParamsResponse is response type for the Query/Params RPC method.
